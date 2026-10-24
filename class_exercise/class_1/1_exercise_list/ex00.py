@@ -1,13 +1,11 @@
-# <<< Exercise_00 >>> (Verificador de paridade) 
+# <<< Exercise_00 >>> (parity checker) 
+#Objective: Check whether a number is odd or even.
 
-"""Data request:
-
-"""
 try:
-
+#Concept: Input handling
     raw_number = input("Please, enter an integer number: ").lower().strip()
 
-#data sanitization - 
+#Data sanitization - 
     clean_number = raw_number
 
     if "." in clean_number and "," in clean_number:

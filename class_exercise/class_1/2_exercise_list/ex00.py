@@ -8,5 +8,3 @@ elif age <= 65:
     print(f"{name} ,you are an adult.")
 else:
     print(f"{name} ,you are retired.") 
-
-
