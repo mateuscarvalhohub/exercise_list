@@ -18,10 +18,10 @@ tasks_by_priorities = {
 for task_position in range(1, 7):    
     while True:
         try:
-            new_task = input(f"Please, register the {task_position}º "
+            new_task = input(f"\nPlease, register the {task_position}º "
                                 "task: ").lower().strip()
             if not new_task:
-                raise ValueError ("Please, the field can't be empty\n")
+                raise ValueError ("Please, the field can't be empty.")
             break       
 
         except ValueError as e:
@@ -29,17 +29,16 @@ for task_position in range(1, 7):
 
     while True:
         try:
-            priority_option = int(input(f"What priority "
+            priority = int(input(f"\nWhat priority "
                 "should be assigned to this task?\n"
                 f"1. {priorites_menu_option[1]}\n"
                 f"2. {priorites_menu_option[2]}\n"
                 f"3. {priorites_menu_option[3]}\n"
                 "type the priority: "))
-            print()
 
-            priority = priorites_menu_option[priority_option]
+            priority_option = priorites_menu_option[priority]
             
-            tasks_by_priorities[priority].append(new_task)
+            tasks_by_priorities[priority_option].append(new_task)
             break
 
         except ValueError:
