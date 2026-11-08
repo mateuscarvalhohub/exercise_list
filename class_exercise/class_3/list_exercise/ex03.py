@@ -1,3 +1,33 @@
+"""
+Exercise 03
+
+Goal:
+Register delivery cities, organize them by distance,
+and generate an optimized delivery route.
+
+Concepts Practiced:
+- Input handling
+- Input validation
+- Data sanitization
+- String manipulation
+- Type conversion
+- Dictionaries
+- Lists
+- Sorting
+- Loops
+- Conditional statements
+- Exception handling
+
+Tests:
+✓ Valid city names and distances (Route generated successfully)
+✓ City name with spaces ("New York" → Accepted)
+✓ Decimal distance with comma ("12,5" → Converted to 12.5)
+✓ Decimal distance with period ("12.5" → Converted correctly)
+✓ Invalid city name ("City123" → Error message)
+✓ Invalid distance ("abc" → Error message)
+✓ Five cities registered successfully
+✓ Cities displayed in ascending order of distance
+"""
 
 delivery_cities ={}
 

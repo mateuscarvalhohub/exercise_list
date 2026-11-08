@@ -1,4 +1,26 @@
-#<<< Exercise_02 (Login de acesso) >>>
+"""
+Exercise 02 
+
+Goal: 
+Authenticate a user by validating 
+the provide username and password 
+against predefined credentials. 
+
+Concepts Practiced:
+- Input handling 
+- Conditional statements
+- Custom exceptions
+- Exception handling 
+- Authentication logic
+- Loops
+
+Tests:
+✓ Valid credentials ("admin", "1234")
+✓ Valid user with invalid password ("admin", "0000")
+✓ Invalid user ("mateus", "1234")
+✓ Empty username ("", "1234")
+✓ Empty password ("admin", "")
+"""
 
 class AuthenticationError(Exception):
     pass

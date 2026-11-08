@@ -1,3 +1,26 @@
+"""
+Exercise 01
+
+Goal:
+Calculate the final purchase amount by applying discounts
+based on customer status and purchase value.
+
+Concepts Practiced:
+- Input handling
+- Type conversion
+- Arithmetic operations
+- Conditional statements
+- String formatting
+- Variables
+
+Tests:
+✓ VIP customer (5 units × €100 → 20% discount, Total: €400)
+✓ Regular customer with purchase ≥ €500 (10 units × €50 → 10% discount, Total: €450)
+✓ Regular customer with purchase between €200 and €499.99 (5 units × €50 → 5% discount, Total: €237.50)
+✓ Regular customer with purchase < €200 (2 units × €50 → No discount, Total: €100)
+✓ VIP customer using lowercase ("y" → 20% discount applied)
+✓ Regular customer using lowercase ("n" → Standard discount rules applied)
+"""
 
 client = str(input("Enter your name: "))
 quantity = int(input("How many products are you buying? "))

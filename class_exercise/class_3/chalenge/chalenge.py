@@ -1,42 +1,37 @@
-# O Protocolo "Sentinela de Dados"
+"""
+Chalenge
 
-# Cenário: Você foi contratado para programar a lógica de um cofre digital de altíssima segurança de uma
-# corretora de criptomoedas. O sistema recebe vários dados de uma vez e você precisa decidir se libera a
-# trava ou aciona o alarme.
+Goal:
+Simulate a secure access control system by validating
+user identity, role, access credentials, 
+and security rules.
 
-# 1. Preparação dos Dados (Contexto)
-# As variáveis iniciais que representam o estado atual do sistema:
+Concepts Practiced:
+- Input handling
+- Input validation
+- String manipulation
+- Sets
+- Tuples
+- Dictionaries
+- Lists
+- Conditional statements
+- Nested loops
+- Authentication logic
+- Access control
+- Custom exceptions
+- Exception handling
 
-#Banco de dados do sistema
-#usuarios_bloqueados ={"hakerman", "dr_evil","py.robot"}
-#funcionários_ativos = ("ana-gerente", "bruno_tech", "carla_diretora")
-#chaves_biometricas = {"setoar_a": "digital_ok", "setor_b", "iris_ok"}
-
-#Tentatival atual (entrada de dados)
-#usuario = input("Digite o nome de usuário: ")
-#cargo = input("Digite o cargo (gerente, tecnico, estagiario): ")
-#possui_cartao = True #simule como se viesse de um sensor
-#tentativas_senha = 1
-
-# Python - Desafio 🏆
-
-# Escreva um programa que use apenas um bloco de IF/ELIF/ELSE para validar o acesso. O acesso só será
-# concedido se todas as seguintes condições forem verdadeiras:
-
-# 1. Segurança de Lista Negra: O usuario NÃO pode estar no conjunto usuarios_bloqueados.
-# 2. Verificação de Hierarquia: O usuario deve estar na tupla funcionarios_ativos.
-# 3. Múltiplos Fatores: O usuário deve ter o cartao_id OU saber a "senha mestra" (defina uma senha
-# ex: "Python2024").
-# 4. Bloqueio de Estagiário: Se o cargo for "estagiario", o acesso é negado automaticamente, mesmo que
-# as outras condições sejam verdadeiras.
-# 5. Integridade do Sistema: O dicionário chaves_biometricas deve conter a chave "setor_a" com
-# o valor "digital_ok".
-# 3. Requisitos de Saída (Prints)
-# ● Se passar em tudo: " ACESSO LIBERADO. Bem-vindo, [NOME]!"
-# ● Se for estagiário: " Acesso negado: Estagiários não possuem nível de acesso ao
-# cofre."
-# ● Se estiver bloqueado: " ALARME ACIONADO: Usuário na lista de restrição!"
-# ● Para qualquer outro erro:
+Tests:
+✓ Active manager with access card ("ana-gerente" → Access granted)
+✓ Active technician with access card ("bruno_tech" → Access granted)
+✓ User not found ("mateus" → User not found)
+✓ Blocked user ("dr_evil" → Restricted user alert)
+✓ Trainee access attempt ("trainee" position → Access denied)
+✓ Valid master password (Card = No → Access granted)
+✓ Invalid master password (3 failed attempts → Access denied)
+✓ Invalid position ("developer" → Invalid position)
+✓ Invalid card option ("Maybe" → Error message)
+"""
 
 class AuthenticationError (Exception):
     pass

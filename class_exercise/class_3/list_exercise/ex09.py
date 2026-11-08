@@ -1,3 +1,36 @@
+"""
+Exercise 09
+
+Goal:
+Register players and their scores, rank them in
+descending order, and display the top three performers.
+
+Concepts Practiced:
+- Input handling
+- Input validation
+- Data sanitization
+- String manipulation
+- Type conversion
+- Dictionaries
+- Lists
+- Tuples
+- Sorting
+- Lambda functions
+- Loops
+- Enumeration
+- Exception handling
+
+Tests:
+✓ Single player registered ("John", 100 → 1st place)
+✓ Multiple players with different scores (150, 120, 90 → Sorted correctly)
+✓ More than three players (Only top 3 displayed)
+✓ Decimal score with comma ("95,5" → Converted to 95.5)
+✓ Decimal score with period ("95.5" → Converted correctly)
+✓ Empty player name ("" → Error message)
+✓ Invalid score ("abc" → Error message)
+✓ Continue registration ("Y" → New player registered)
+✓ Finish registration ("N" → Ranking displayed)
+"""
 
 players_names_and_scores_info ={}
 
@@ -49,7 +82,6 @@ while True:
     
     if end_of_log == "N":
          break
-    
           
 players_list_info = list(players_names_and_scores_info.items())
 

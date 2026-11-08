@@ -1,9 +1,34 @@
-#<<< Exercise_03 >>> (Calculadora IMC)
+"""
+Exercise 03 
+
+Goal:
+Calculate Body Mass Index (BMI) based 
+on the user's height and weight, then 
+classify the result.
+
+Concepts Practiced:
+- Input handling
+- Input validation
+- Type conversion
+- Arithmetic operations
+- Conditional statements
+- Loops
+- Exception handling
+
+Tests:
+✓ Healthy weight (70 kg, 1.75 m)
+✓ Underweight (50 kg, 1.75 m)
+✓ Overweight (90 kg, 1.75 m)
+✓ Invalid height (0, -1, 4)
+✓ Decimal input (1.75, 70.5)
+✓ Invalid input ("abc")
+"""
 
 while True:
     try:
 
-        height = float(input("Please, enter your height in meters (e.g., 1.70): "))
+        height = float(input("Please, "
+        "enter your height in meters (e.g., 1.70): "))
 
         if height <= 0 or height >= 4:
             print("\nInvalid height.\n")
@@ -17,7 +42,8 @@ while True:
 while True:
     try:
 
-        weight = float(input("Please, enter your weight (kg): "))
+        weight = float(input("Please, "
+        "enter your weight (kg): "))
 
         imc = weight / (height ** 2)
         imc = round(imc, 2)

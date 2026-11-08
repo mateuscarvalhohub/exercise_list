@@ -1,4 +1,30 @@
-#>>> Exercise_09 <<< (Simulador de Caixa Eletrônico)
+"""
+Exercise 09 
+
+Goal:
+Simulate an ATM withdrawal system by 
+distributing the requested amount using 
+available banknotes.
+
+Concepts Practiced:
+- Input handling 
+- Input validantion
+- Type conversion
+- Lists
+- Dictionaries
+- Loops
+- Conditional statements
+- Arithmetic operations
+- Exception handling
+
+Tests:
+✓ €80 → 4 × €20
+✓ €150 → 7 × €20, 1 × €10
+✓ €320 → 1 × €50, 13 × €20, 1 × €10
+✓ €100 → 10 × €10
+✓ Invalid amount (0 → Error message)
+✓ Invalid input ("abc" → Error message)
+"""
 
 while True:
     try:

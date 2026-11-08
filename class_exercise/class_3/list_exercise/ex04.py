@@ -1,10 +1,31 @@
-# 5. Tradutor de Códigos de Erro (Dict)
-# Crie um dicionário fixo com 5 códigos de erro de servidor (ex: 404: "Not Found", 500:
-# "Internal Server Error", etc.).
-# ● Peça ao usuário um código.
-# ● Se o código existir, exiba a mensagem.
-# ● Se não existir, use um método do dicionário para retornar "Código de erro desconhecido" e
-# adicione esse novo código ao dicionário com uma mensagem padrão definida pelo usuário.
+"""
+Exercise 04
+
+Goal:
+Retrieve and display server error messages based on
+an error code, while allowing unknown codes to be
+registered with a default message.
+
+Concepts Practiced:
+- Input handling
+- Input validation
+- Data sanitization
+- Type conversion
+- Dictionaries
+- Dictionary methods
+- Conditional statements
+- Loops
+- Exception handling
+
+Tests:
+✓ Known code (404 → Not Found)
+✓ Known code (500 → Internal Server Error)
+✓ Known code (401 → Unauthorized)
+✓ Unknown code (999 → Unknown error code)
+✓ Code with separators ("4,0,4" → 404)
+✓ Code with separators ("4.0.4" → 404)
+✓ Invalid input ("abc" → Error message)
+"""
 
 error_codes = {
     404: "Not found",

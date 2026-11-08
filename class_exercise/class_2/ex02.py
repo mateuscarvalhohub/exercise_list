@@ -1,11 +1,26 @@
-# Exercício 3: Verificador de Clube (Set + IF/ELIF)
-# Objetivo: Usar conjuntos para verificar permissões únicas.
-# 1. Crie um Set chamado convidados_vip com 4 nomes de sua escolha.
-# 2. Peça para o usuário digitar o seu nome.
-# 3. Lógica:
-# ○ Se o nome estiver no Set, exiba "Bem-vindo à área VIP!".
-# ○ Se o nome for "Dono", exiba "Bem-vindo, chefe!".
-# ○ Para qualquer outro nome, exiba "Acesso apenas com convite".
+"""
+Exercise 02
+
+Goal:
+Control access to a VIP lounge by validating whether
+the guest's name is included in the VIP guest list.
+
+Concepts Practiced:
+- Input handling
+- String manipulation
+- Sets
+- Conditional statements
+- Membership operators
+- Loops
+
+Tests:
+✓ VIP guest ("Mateus" → Welcome to the VIP lounge!)
+✓ VIP guest with lowercase input ("mateus" → Welcome to the VIP lounge!)
+✓ VIP guest ("Eduarda" → Welcome to the VIP lounge!)
+✓ Special guest ("Boss" → Welcome, Boss!)
+✓ Non-VIP guest ("João" → Access by Invitation Only)
+✓ Empty input ("" → Access by Invitation Only)
+"""
 
 vip_guests = {"Mateus", "Ricardo", "Eduarda", "Guilherme"}
 

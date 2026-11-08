@@ -1,3 +1,35 @@
+"""
+Exercise 02
+ 
+Goal:
+Classify support tickets based on customer category,
+issue type, and waiting time to determine priority
+and estimated response time.
+ 
+Concepts Practiced:
+- Input handling
+- Input validation
+- Type conversion
+- Dictionaries
+- Conditional statements
+- Logical operators
+- String formatting
+- Loops
+- Exception handling
+ 
+Tests:
+✓ Premium + Critical Error (Priority: Critical | Time Limit: 24 hours)
+✓ Standard + Critical Error + 30 hours open (Priority: Critical | Time Limit: 24 hours)
+✓ Premium + Question (Priority: High | Time Limit: 4 hours)
+✓ Educational + Critical Error (Priority: High | Time Limit: 4 hours)
+✓ Standard + Question (Priority: Medium | Time Limit: 8 hours)
+✓ Educational + Question (Priority: Medium | Time Limit: 8 hours)
+✓ Premium + Suggestion (Priority: Medium | Time Limit: 8 hours)
+✓ Standard + Suggestion (Priority: Low | Time Limit: 24 hours)
+✓ Invalid category (Error message)
+✓ Invalid issue type (Error message)
+✓ Invalid hours open (Error message)
+"""
 
 while True:
     try:

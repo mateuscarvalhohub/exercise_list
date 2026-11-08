@@ -1,4 +1,33 @@
-#Comentário para o commit
+"""
+Exercise 02
+
+Goal:
+Register students, validate grades, calculate averages,
+and determine their academic status.
+
+Concepts Practiced:
+- Input handling
+- Input validation
+- Data sanitization
+- String manipulation
+- Type conversion
+- Dictionaries
+- Tuples
+- Loops
+- Conditional statements
+- Exception handling
+- Arithmetic operations
+
+Tests:
+✓ Valid student and grades ("John", 8.5, 7.5 → Approved)
+✓ Student below average ("Mary", 5.0, 6.0 → Not approved)
+✓ Decimal grades with comma ("7,5", "8,0" → Converted correctly)
+✓ Grades with currency symbols ("€8.5", "$7.0" → Sanitized correctly)
+✓ Invalid grade input ("abc" → Error message)
+✓ Invalid student name ("John123" → Error message)
+✓ Three students registered successfully
+"""
+
 students = {}
 
 for student_count in range(1, 4) :

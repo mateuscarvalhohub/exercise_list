@@ -1,4 +1,25 @@
-#<<< Exercise_07 >>> (Calculadora Simples)
+"""
+Exercise 07 
+
+Goal:
+Perform basic arithmetic operations between two 
+numbers based on the operator selected by the user.
+
+Concepts Practiced:
+- Input handling
+- Input validation
+- Type conversion
+- Arithmetic operations
+- Conditional statements
+- Lists
+- Loops
+- Exception handling
+
+Tests:
+✓ Addition (10 + 5)
+✓ Subtraction (10 - 5)
+✓ Multiplication (10 * 5)
+"""
 
 while True:
     try:
@@ -24,7 +45,9 @@ math_operation = ["+", "-", "*", "/"]
 
 while True:
     try:
-        operation = str(input(f"\nPlease, choose the operator: ( {' , '.join(math_operation)} ): ")).strip()
+        operation = str(input(f"\nPlease, "
+        "choose the operator: "
+        "( {' , '.join(math_operation)} ): ")).strip()
 
         if operation not in math_operation:
             raise ValueError
@@ -40,10 +63,12 @@ while True:
                 raise ZeroDivisionError
             result = first_number / second_number
 
-        print(f"{first_number} {operation} {second_number} = {result:.2f}\n")
+        print(f"{first_number} {operation} \
+              {second_number} = {result:.2f}\n")
         break
 
     except ValueError:
-        print(f"(Please, enter a valid operator: [ {'  '.join(math_operation)} ] )")
+        print(f"(Please, enter a valid operator:\
+               [ {'  '.join(math_operation)} ] )")
     except ZeroDivisionError:
         print("Cannot divide by zero.")

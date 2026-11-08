@@ -1,14 +1,26 @@
-# Exercício 4: Classificador de Notas (Dict + ELIF)
-# Objetivo: Mapear dados e aplicar lógica de classificação sobre os valores.
-# 1. Crie um dicionário chamado boletim com 3 matérias e suas respectivas notas (ex: {"Matematica": 8.5, "Portugues":
-# 6.0, "Historia": 4.5}).
-# 2. Peça para o usuário digitar o nome de uma matéria.
-# 3. Lógica:
-# ○ Se a matéria existir no dicionário:
-# ■ Se a nota for >= 7: exiba "Aprovado em [Matéria]".
-# ■ Se a nota for entre 5 e 6.9: exiba "Recuperação em [Matéria]".
-# ■ Se for menor que 5: exiba "Reprovado em [Matéria]".
-# ○ Se a matéria não existir no dicionário, exiba "Matéria não encontrada".
+"""
+Exercise 03
+
+Goal:
+Check a student's grade in a selected subject and
+display their academic status.
+
+Concepts Practiced:
+- Input handling
+- String manipulation
+- Dictionaries
+- Conditional statements
+- Loops
+- Membership operators
+
+Tests:
+✓ Approved ("math" → Grade: 8.5 → Approved)
+✓ Remedial ("english" → Grade: 5.0 → Remedial)
+✓ Failed ("physics" → Grade: 4.3 → Failed)
+✓ Subject not found ("biology" → Subject not found)
+✓ Mixed case input ("Math" → Approved)
+✓ Empty input ("" → Subject not found)
+"""
 
 report_card = {
     "math": 8.5,

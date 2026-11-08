@@ -1,4 +1,27 @@
-#<<< Exercise_06 >>> (Analisador de Triângulos)
+""" 
+Exercise 06 
+
+Goal:
+Determine whether three measurements can form
+a triangle and identify its type.
+
+Concepts Practiced:
+- Input handling
+- Input validation
+- Type conversion
+- Conditional statements
+- Logical operators
+- Loops
+- Exception handling
+
+Tests:
+✓ Equilateral triangle (5, 5, 5)
+✓ Isosceles triangle (5, 5, 8)
+✓ Scalene triangle (3, 4, 5)
+✓ Invalid triangle (1, 2, 5)
+✓ Decimal measurements (3.5, 4.5, 5.5)
+✓ Invalid input ("abc")
+"""
 
 while True: 
     try:

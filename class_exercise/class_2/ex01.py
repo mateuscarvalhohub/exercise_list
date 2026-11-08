@@ -1,9 +1,26 @@
-# Crie uma tupla chamada admin_acesso que contém: ("admin", "12345").
-# 2. Peça para o usuário digitar o usuario e a senha.
-# 3. Lógica:
-# ○ Se o usuario for igual ao primeiro item da tupla E a senha for igual ao segundo item, exiba "Acesso
-# concedido!".
-# ○ Caso contrário, exiba "Login ou senha incorretos".
+"""
+Exercise 01
+
+Goal:
+Authenticate a user by validating a username and password
+against predefined administrator credentials.
+
+Concepts Practiced:
+- Input handling
+- Tuples
+- Conditional statements
+- Loops
+- String comparison
+- Authentication logic
+
+Tests:
+✓ Valid credentials ("admin", "12345" → Access granted)
+✓ Invalid username ("user", "12345" → Access denied)
+✓ Invalid password ("admin", "00000" → Access denied)
+✓ Invalid username and password ("user", "00000" → Access denied)
+✓ Empty username ("", "12345" → Access denied)
+✓ Empty password ("admin", "" → Access denied)
+"""
 
 admin_acces = ("admin", "12345")
 

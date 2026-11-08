@@ -1,3 +1,30 @@
+"""
+Exercise 07
+
+Goal:
+Register tasks and organize them according to their
+priority level.
+
+Concepts Practiced:
+- Input handling
+- Input validation
+- Dictionaries
+- Lists
+- Nested loops
+- Conditional statements
+- Exception handling
+- Data organization
+
+Tests:
+✓ High priority task ("fix bug" → Added to High priority)
+✓ Medium priority task ("update docs" → Added to Medium priority)
+✓ Low priority task ("clean desk" → Added to Low priority)
+✓ Empty task name ("" → Error message)
+✓ Invalid priority number (4 → Error message)
+✓ Non-numeric priority ("abc" → Error message)
+✓ Six tasks registered successfully
+✓ Tasks displayed grouped by priority
+"""
 
 priorites_menu_option ={
     1: "high",

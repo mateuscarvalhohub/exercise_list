@@ -1,4 +1,26 @@
-#<<< Exercise_04 >>> (Aprovado ou Reprovado)
+"""
+Exercise 04
+
+Goal: 
+Calculate a student's average grade 
+and determine their academic status.
+
+Concepts Practiced:
+- Input handling
+- Type conversion
+- Arithmetic operations
+- Conditional statements
+- Loops
+- Exceptions handling
+
+Tests:
+✓ Passed (8.0, 7.5, 9.0)
+✓ Remedial (5.0, 6.0, 6.5)
+✓ Failed (3.0, 4.5, 5.0)
+✓ Decimal grades (7.5, 8.2, 6.8)
+✓ Negative grades (-1.0, 7.0, 8.0)
+✓ Invalid input ("abc")
+"""
 
 while True:
     try:
