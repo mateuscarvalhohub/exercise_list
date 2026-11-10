@@ -19,28 +19,27 @@ Tests:
 ✓ Decimal input with period (5.5)
 ✓ Invalid input ("abc")
 """
+while True:
+    try:
+        #Get and normalize user input
+        raw_number = input("Please, enter an integer number: ").strip()
 
-try:
-    #Get and normalize user input
-    raw_number = input("Please, enter an integer number: ").strip()
+        #Data sanitization - standardize numeric format
+        if "." in raw_number and "," in raw_number:
+            clean_number = raw_number.replace(".", "")
 
-    #Data sanitization - standardize numeric format
-    clean_number = raw_number
+            clean_number = clean_number.replace(",", ".")
 
-    if "." in clean_number and "," in clean_number:
-        clean_number = clean_number.replace(".", "")
+        #Convert input to a numeric value
+        number = float(clean_number)
 
-    clean_number = clean_number.replace(",", ".")
+        #check number parity
+        if number % 2 == 0:
+            print("The number is even.")
+        else:
+            print("The number is odd.")
+        break
 
-    #Convert input to a numeric value
-    number = float(clean_number)
-
-    #check number parity
-    if number % 2 == 0:
-        print("The number is even.")
-    else:
-        print("The number is odd.")
-
-except ValueError:
-    #Handle invalid input
-    print("Please, enter numbers only.")
+    except ValueError:
+        #Handle invalid input
+        print("Please, enter numbers only.")

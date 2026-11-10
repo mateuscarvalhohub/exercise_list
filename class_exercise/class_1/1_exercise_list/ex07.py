@@ -45,9 +45,8 @@ math_operation = ["+", "-", "*", "/"]
 
 while True:
     try:
-        operation = str(input(f"\nPlease, "
-        "choose the operator: "
-        "( {' , '.join(math_operation)} ): ")).strip()
+        operation = (input(f"\nPlease, "
+        f"choose the operator ( {' , '.join(math_operation)} ): ")).strip()
 
         if operation not in math_operation:
             raise ValueError
@@ -63,8 +62,8 @@ while True:
                 raise ZeroDivisionError
             result = first_number / second_number
 
-        print(f"{first_number} {operation} \
-              {second_number} = {result:.2f}\n")
+        print(f"{first_number} {operation}"
+              f"{second_number} = {result:.2f}\n")
         break
 
     except ValueError:

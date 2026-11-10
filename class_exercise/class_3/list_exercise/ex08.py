@@ -7,9 +7,5 @@
 # "Coordenada duplicada ignorada".
 # ● Ao final, exiba a distância total percorrida entre todos os pontos únicos.
 
-sum = 0
-for number in range(1, 101):
-    sum = sum + number
 
-print(f" A soma é: {sum}")
     
