@@ -22,7 +22,7 @@ Tests:
 while True:
     try:
         #Get and normalize user input
-        raw_number = input("Please, enter an integer number: ").strip()
+        raw_number = input("Please, enter an number: ").strip()
 
         #Data sanitization - standardize numeric format
         if "." in raw_number and "," in raw_number:
