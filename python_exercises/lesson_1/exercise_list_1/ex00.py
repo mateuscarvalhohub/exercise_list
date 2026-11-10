@@ -31,7 +31,7 @@ while True:
             clean_number = clean_number.replace(",", ".")
 
         #Convert input to a numeric value
-        number = float(clean_number)
+        number = float(raw_number)
 
         #check number parity
         if number % 2 == 0:

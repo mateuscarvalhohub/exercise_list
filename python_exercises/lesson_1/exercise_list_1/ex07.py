@@ -62,7 +62,7 @@ while True:
                 raise ZeroDivisionError
             result = first_number / second_number
 
-        print(f"{first_number} {operation}"
+        print(f"{first_number} {operation} "
               f"{second_number} = {result:.2f}\n")
         break
 

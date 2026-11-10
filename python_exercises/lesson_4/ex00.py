@@ -50,7 +50,7 @@ while True:
 
     while True:
         try:
-            performance_score = input("Please, enter your performance score (score ranges from 0 to 10): ").strip()
+            performance_score = input("Please, enter your performance score (score ranges from 0.0 to 10.0): ").strip()
 
             if "," in performance_score and "." in performance_score:
                 raise ValueError("Please, enter a valid number.")
@@ -60,11 +60,10 @@ while True:
                 clean_performance_score = performance_score.replace(",", ".")
                 score = float(clean_performance_score)
             elif performance_score.replace(".", "", 1).isdigit():
-                score = float(performance_score)
+                score = performance_score.replace(".", "")
+                score = float(score)
             else:
                 raise ValueError("Please, enter numbers only.")
-
-            score = float(performance_score)
 
             if score < 0 or score > 10:
                 raise ValueError ("Please, enter a valid score (score ranges from 0 to 10).")
